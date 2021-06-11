@@ -1,1 +1,1 @@
-# Hoge-Swift
+# Example-WidgetKit-Suggestions
