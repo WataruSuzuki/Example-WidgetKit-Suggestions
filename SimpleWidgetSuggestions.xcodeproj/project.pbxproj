@@ -13,6 +13,13 @@
 		7557B06826AF8EBF00A418A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7557B06726AF8EBF00A418A9 /* Preview Assets.xcassets */; };
 		7557B07226AF8EBF00A418A9 /* SimpleWidgetSuggestionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7557B07126AF8EBF00A418A9 /* SimpleWidgetSuggestionsTests.swift */; };
 		7557B07C26AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7557B07B26AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests.swift */; };
+		7557B08F26AF91ED00A418A9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557B08E26AF91ED00A418A9 /* WidgetKit.framework */; };
+		7557B09126AF91ED00A418A9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557B09026AF91ED00A418A9 /* SwiftUI.framework */; };
+		7557B09426AF91ED00A418A9 /* HelloSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7557B09326AF91ED00A418A9 /* HelloSuggestion.swift */; };
+		7557B09726AF91EE00A418A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7557B09626AF91EE00A418A9 /* Assets.xcassets */; };
+		7557B09926AF91EE00A418A9 /* HelloSuggestion.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7557B09526AF91ED00A418A9 /* HelloSuggestion.intentdefinition */; };
+		7557B09A26AF91EE00A418A9 /* HelloSuggestion.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7557B09526AF91ED00A418A9 /* HelloSuggestion.intentdefinition */; };
+		7557B09D26AF91EE00A418A9 /* HelloSuggestionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7557B08C26AF91ED00A418A9 /* HelloSuggestionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = 7557B05C26AF8EBE00A418A9;
 			remoteInfo = SimpleWidgetSuggestions;
 		};
+		7557B09B26AF91EE00A418A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7557B05526AF8EBE00A418A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7557B08B26AF91ED00A418A9;
+			remoteInfo = HelloSuggestionExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7557B09E26AF91EE00A418A9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7557B09D26AF91EE00A418A9 /* HelloSuggestionExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7557B05D26AF8EBE00A418A9 /* SimpleWidgetSuggestions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWidgetSuggestions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +70,13 @@
 		7557B07126AF8EBF00A418A9 /* SimpleWidgetSuggestionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetSuggestionsTests.swift; sourceTree = "<group>"; };
 		7557B07726AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWidgetSuggestionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7557B07B26AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetSuggestionsUITests.swift; sourceTree = "<group>"; };
+		7557B08C26AF91ED00A418A9 /* HelloSuggestionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HelloSuggestionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7557B08E26AF91ED00A418A9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7557B09026AF91ED00A418A9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7557B09326AF91ED00A418A9 /* HelloSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSuggestion.swift; sourceTree = "<group>"; };
+		7557B09526AF91ED00A418A9 /* HelloSuggestion.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HelloSuggestion.intentdefinition; sourceTree = "<group>"; };
+		7557B09626AF91EE00A418A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7557B09826AF91EE00A418A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7557B08926AF91ED00A418A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7557B09126AF91ED00A418A9 /* SwiftUI.framework in Frameworks */,
+				7557B08F26AF91ED00A418A9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +119,8 @@
 				7557B05F26AF8EBE00A418A9 /* SimpleWidgetSuggestions */,
 				7557B07026AF8EBF00A418A9 /* SimpleWidgetSuggestionsTests */,
 				7557B07A26AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests */,
+				7557B09226AF91ED00A418A9 /* HelloSuggestion */,
+				7557B08D26AF91ED00A418A9 /* Frameworks */,
 				7557B05E26AF8EBE00A418A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +131,7 @@
 				7557B05D26AF8EBE00A418A9 /* SimpleWidgetSuggestions.app */,
 				7557B06D26AF8EBF00A418A9 /* SimpleWidgetSuggestionsTests.xctest */,
 				7557B07726AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests.xctest */,
+				7557B08C26AF91ED00A418A9 /* HelloSuggestionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +171,26 @@
 			path = SimpleWidgetSuggestionsUITests;
 			sourceTree = "<group>";
 		};
+		7557B08D26AF91ED00A418A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7557B08E26AF91ED00A418A9 /* WidgetKit.framework */,
+				7557B09026AF91ED00A418A9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7557B09226AF91ED00A418A9 /* HelloSuggestion */ = {
+			isa = PBXGroup;
+			children = (
+				7557B09326AF91ED00A418A9 /* HelloSuggestion.swift */,
+				7557B09526AF91ED00A418A9 /* HelloSuggestion.intentdefinition */,
+				7557B09626AF91EE00A418A9 /* Assets.xcassets */,
+				7557B09826AF91EE00A418A9 /* Info.plist */,
+			);
+			path = HelloSuggestion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +201,12 @@
 				7557B05926AF8EBE00A418A9 /* Sources */,
 				7557B05A26AF8EBE00A418A9 /* Frameworks */,
 				7557B05B26AF8EBE00A418A9 /* Resources */,
+				7557B09E26AF91EE00A418A9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7557B09C26AF91EE00A418A9 /* PBXTargetDependency */,
 			);
 			name = SimpleWidgetSuggestions;
 			productName = SimpleWidgetSuggestions;
@@ -180,6 +249,23 @@
 			productReference = 7557B07726AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7557B08B26AF91ED00A418A9 /* HelloSuggestionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7557B0A126AF91EE00A418A9 /* Build configuration list for PBXNativeTarget "HelloSuggestionExtension" */;
+			buildPhases = (
+				7557B08826AF91ED00A418A9 /* Sources */,
+				7557B08926AF91ED00A418A9 /* Frameworks */,
+				7557B08A26AF91ED00A418A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloSuggestionExtension;
+			productName = HelloSuggestionExtension;
+			productReference = 7557B08C26AF91ED00A418A9 /* HelloSuggestionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +287,9 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 7557B05C26AF8EBE00A418A9;
 					};
+					7557B08B26AF91ED00A418A9 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = 7557B05826AF8EBE00A418A9 /* Build configuration list for PBXProject "SimpleWidgetSuggestions" */;
@@ -219,6 +308,7 @@
 				7557B05C26AF8EBE00A418A9 /* SimpleWidgetSuggestions */,
 				7557B06C26AF8EBF00A418A9 /* SimpleWidgetSuggestionsTests */,
 				7557B07626AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests */,
+				7557B08B26AF91ED00A418A9 /* HelloSuggestionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +337,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7557B08A26AF91ED00A418A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7557B09726AF91EE00A418A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,6 +354,7 @@
 			files = (
 				7557B06326AF8EBE00A418A9 /* ContentView.swift in Sources */,
 				7557B06126AF8EBE00A418A9 /* SimpleWidgetSuggestionsApp.swift in Sources */,
+				7557B09A26AF91EE00A418A9 /* HelloSuggestion.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +374,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7557B08826AF91ED00A418A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7557B09926AF91EE00A418A9 /* HelloSuggestion.intentdefinition in Sources */,
+				7557B09426AF91ED00A418A9 /* HelloSuggestion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = 7557B05C26AF8EBE00A418A9 /* SimpleWidgetSuggestions */;
 			targetProxy = 7557B07826AF8EBF00A418A9 /* PBXContainerItemProxy */;
+		};
+		7557B09C26AF91EE00A418A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7557B08B26AF91ED00A418A9 /* HelloSuggestionExtension */;
+			targetProxy = 7557B09B26AF91EE00A418A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -410,6 +523,7 @@
 		7557B08026AF8EBF00A418A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +553,7 @@
 		7557B08126AF8EBF00A418A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +672,58 @@
 			};
 			name = Release;
 		};
+		7557B09F26AF91EE00A418A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloSuggestion/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HelloSuggestion;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SimpleWidgetSuggestions.HelloSuggestion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7557B0A026AF91EE00A418A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloSuggestion/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HelloSuggestion;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SimpleWidgetSuggestions.HelloSuggestion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +759,15 @@
 			buildConfigurations = (
 				7557B08626AF8EBF00A418A9 /* Debug */,
 				7557B08726AF8EBF00A418A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7557B0A126AF91EE00A418A9 /* Build configuration list for PBXNativeTarget "HelloSuggestionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7557B09F26AF91EE00A418A9 /* Debug */,
+				7557B0A026AF91EE00A418A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
