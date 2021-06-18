@@ -44,7 +44,10 @@ struct HelloSuggestionEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        VStack {
+            Text("(=ΦωΦ=)")
+            Text("Miow miow")
+        }
     }
 }
 
@@ -56,7 +59,7 @@ struct HelloSuggestion: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             HelloSuggestionEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
+        .configurationDisplayName("(・∀・)")
         .description("This is an example widget.")
     }
 }

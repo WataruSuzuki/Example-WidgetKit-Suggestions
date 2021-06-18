@@ -77,6 +77,9 @@
 		7557B09526AF91ED00A418A9 /* HelloSuggestion.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HelloSuggestion.intentdefinition; sourceTree = "<group>"; };
 		7557B09626AF91EE00A418A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7557B09826AF91EE00A418A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7557B0A226AF9CB200A418A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7557B0A326AFA68B00A418A9 /* SimpleWidgetSuggestions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleWidgetSuggestions.entitlements; sourceTree = "<group>"; };
+		7557B0A426AFA78C00A418A9 /* HelloSuggestionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloSuggestionExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 		7557B05426AF8EBE00A418A9 = {
 			isa = PBXGroup;
 			children = (
+				7557B0A426AFA78C00A418A9 /* HelloSuggestionExtension.entitlements */,
 				7557B05F26AF8EBE00A418A9 /* SimpleWidgetSuggestions */,
 				7557B07026AF8EBF00A418A9 /* SimpleWidgetSuggestionsTests */,
 				7557B07A26AF8EBF00A418A9 /* SimpleWidgetSuggestionsUITests */,
@@ -139,6 +143,8 @@
 		7557B05F26AF8EBE00A418A9 /* SimpleWidgetSuggestions */ = {
 			isa = PBXGroup;
 			children = (
+				7557B0A326AFA68B00A418A9 /* SimpleWidgetSuggestions.entitlements */,
+				7557B0A226AF9CB200A418A9 /* Info.plist */,
 				7557B06026AF8EBE00A418A9 /* SimpleWidgetSuggestionsApp.swift */,
 				7557B06226AF8EBE00A418A9 /* ContentView.swift */,
 				7557B06426AF8EBF00A418A9 /* Assets.xcassets */,
@@ -526,11 +532,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleWidgetSuggestions/SimpleWidgetSuggestions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleWidgetSuggestions/Preview Content\"";
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleWidgetSuggestions/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -542,7 +551,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SimpleWidgetSuggestions;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.SimpleWidgetSuggestions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -556,11 +565,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleWidgetSuggestions/SimpleWidgetSuggestions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleWidgetSuggestions/Preview Content\"";
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleWidgetSuggestions/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -587,6 +599,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -611,6 +624,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -634,6 +648,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,6 +671,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -677,19 +693,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HelloSuggestionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloSuggestion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HelloSuggestion;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SimpleWidgetSuggestions.HelloSuggestion;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.SimpleWidgetSuggestions.HelloSuggestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -703,19 +722,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HelloSuggestionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloSuggestion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HelloSuggestion;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SimpleWidgetSuggestions.HelloSuggestion;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.SimpleWidgetSuggestions.HelloSuggestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

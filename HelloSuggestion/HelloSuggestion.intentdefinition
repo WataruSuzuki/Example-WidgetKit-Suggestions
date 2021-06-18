@@ -9,24 +9,42 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>88xZPY</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>20A294</string>
+	<string>20F71</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>12A6144</string>
+	<string>13A5192j</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>12.0</string>
+	<string>13.0</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Getting start how to use WidgetKit Suggestions</string>
 			<key>INIntentDescriptionID</key>
 			<string>tVvJ9c</string>
 			<key>INIntentEligibleForWidgets</key>
 			<true/>
-			<key>INIntentIneligibleForSuggestions</key>
-			<true/>
 			<key>INIntentName</key>
 			<string>Configuration</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSubtitle</key>
+					<string>Getting start how to use WidgetKit Suggestions</string>
+					<key>INIntentParameterCombinationSubtitleID</key>
+					<string>cYLk3F</string>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>HelloSuggestion</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>xUlsrW</string>
+				</dict>
+			</dict>
 			<key>INIntentResponse</key>
 			<dict>
 				<key>INIntentResponseCodes</key>
@@ -44,7 +62,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Configuration</string>
+			<string>HelloSuggestion</string>
 			<key>INIntentTitleID</key>
 			<string>gpCwrM</string>
 			<key>INIntentType</key>
